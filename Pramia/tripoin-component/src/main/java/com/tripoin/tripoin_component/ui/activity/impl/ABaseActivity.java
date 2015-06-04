@@ -36,8 +36,8 @@ public abstract class ABaseActivity<T> extends Activity implements IBaseActivity
         super.onCreate(savedInstanceState);
         setContentView(getViewLayoutId());
         setupTypeFace();
-        initWidget();
         ButterKnife.inject(this);
+        initWidget();
     }
 
     @Override
