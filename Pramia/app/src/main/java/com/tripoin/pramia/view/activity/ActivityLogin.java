@@ -22,11 +22,12 @@ public class ActivityLogin extends ABaseActivity{
     @Override
     public void initWidget() {
         myName = "Activity Login";
+        txtTitle.setText(myName);
     }
 
     @Override
     public int getViewLayoutId() {
-        return 0;
+        return R.layout.activity_login;
     }
 
     @Override
@@ -37,5 +38,6 @@ public class ActivityLogin extends ABaseActivity{
     @OnClick(R.id.txtTitle)
     public void onTitleClick(){
         Toast.makeText(this, "I am clicked ".concat(myName),Toast.LENGTH_SHORT).show();
+        gotoNextActivity(ActivityMain.class, "", "");
     }
 }

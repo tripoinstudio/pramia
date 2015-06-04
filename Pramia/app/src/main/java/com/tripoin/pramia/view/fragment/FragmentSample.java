@@ -15,7 +15,7 @@ import butterknife.OnClick;
  */
 public class FragmentSample extends ABaseNavigationDrawerFragment {
 
-    @InjectView(R.id.txtSample) private TextView txtSample;
+    @InjectView(R.id.txtSample) public TextView txtSample;
 
     private String m_data;
 
