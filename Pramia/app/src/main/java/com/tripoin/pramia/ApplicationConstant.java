@@ -5,4 +5,8 @@ package com.tripoin.pramia;
  * mail : achmad.fauzi@sigma.co.id
  */
 public interface ApplicationConstant {
+
+    interface FragmentTitle{
+        public final String ORDER_DETAIL = "Order Detail";
+    }
 }
