@@ -1,4 +1,4 @@
-package com.tripoin.tripoin_service;
+package com.tripoin.tripoin_service.ormservice;
 
 /**
  * Created by Achmad Fauzi on 6/4/2015 : 9:59 PM.
