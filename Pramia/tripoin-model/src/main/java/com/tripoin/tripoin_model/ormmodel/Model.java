@@ -1,4 +1,4 @@
-package com.tripoin.tripoin_model;
+package com.tripoin.tripoin_model.ormmodel;
 
 /**
  * Created by Achmad Fauzi on 6/4/2015 : 9:59 PM.
