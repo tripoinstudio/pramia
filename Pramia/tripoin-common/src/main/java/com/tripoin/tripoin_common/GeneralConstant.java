@@ -17,23 +17,31 @@ public interface GeneralConstant {
         public final String UNDERSCORE = "_";
         public final String HYPHEN = "-";
         public final String SLASH = "/";
-        public final String EMPTY = "";
+        public final String STRING_EMPTY = "";
     }
 
     interface Rest{
         public String BASE_URL_DEV = "http://180.250.80.72:8080/mforce-rest/ws/service";
         public String BASE_URL_PROD = "http://180.250.80.72:8080/mforce-rest/ws/service";
         public String AUTHORIZATION = "Authorization";
+        public String HTTP = "http";
         public String BASIC = "Basic";
         public String ACCEPT = "Accept";
         public String APPLICATION_JSON = "application/json";
         public String APPLICATION_XML = "application/xml";
+        public int DEFAULT_HTTP_TIMEOUT = 30;
+        public String HTTP_POST = "POST";
+        public String HTTP_GET = "GET";
+        public String WS_CONTEXT = "tripoin/wscontext/";
     }
 
     interface ApplicationMessage{
-        public final String ACTION_BAR_TITLE = "Tripoin Mobile";
+        public final String DEFAULT_ACTION_BAR_TITLE = "Tripoin Mobile";
         public final String WORKING_HOUR = "Working Hour";
         public final String NON_WORKING_HOUR = "Non Working Hour";
+        public final String APP_MODE = "development";
+        public final String DEVELOPMENT = "development";
+        public final String PRODUCTION = "production";
     }
 
     interface ApplicationProperty{
@@ -41,6 +49,9 @@ public interface GeneralConstant {
         public final String APP_TARGET_DEFAULT_PATH = Environment.getExternalStorageDirectory().getPath()
                 .concat(Punctuation.SLASH)
                 .concat(TENANT_NAME);
+        public final String APP_PROPERTY = APP_TARGET_DEFAULT_PATH.concat(".property");
+        public final String SERVER_HOST_KEY = "SERVER_HOST";
+        public final String SERVER_PORT_KEY ="SERVER_PORT";
     }
 
 
@@ -74,14 +85,21 @@ public interface GeneralConstant {
         public final String RESTART_SERVICE = "restart_service";
     }
 
-    interface database{
+    interface Database{
         public final String DATABASE_NAME = "tripoin_mobile_".concat(ApplicationProperty.TENANT_NAME);
         public final int DB_VERSION = 1;
         public final String ID = "id";
 
-        interface table_x{
+        interface TableX{
             public final String name = "name";
             public final String address = "address";
         }
+    }
+
+    interface NativeModel{
+        public String INTEGER = "integer";
+        public String TEXT = "text";
+        public String REAL = "real";
+        public String BLOB = "blob";
     }
 }
