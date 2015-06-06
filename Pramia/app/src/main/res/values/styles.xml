@@ -1,8 +1,39 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme1" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/nliveo_green_colorPrimary</item>
+    </style>
+
+    <style name="myTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/nliveo_green_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/nliveo_green_colorPrimaryDark</item>
+        <item name="colorAccent">@color/nliveo_green_colorPrimary</item>
+    </style>
+
+    <style name="nLiveoDrawer" parent="nLiveo.Theme.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/nliveo_green_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/nliveo_green_alpha_colorPrimaryDark</item>
+        <item name="colorAccent">@color/nliveo_green_colorPrimary</item>
+    </style>
+
+    <style name="nLiveoDrawerBlue" parent="nLiveo.Theme.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#144084</item>
+        <item name="colorPrimaryDark">@color/nliveo_blue_colorPrimaryDark</item>
+        <item name="colorAccent">#144084</item>
+    </style>
+
+    <style name="spinner_orderlist" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
     </style>
 
 </resources>

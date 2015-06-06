@@ -21,7 +21,7 @@ public class FragmentSample extends ABaseNavigationDrawerFragment {
 
     @Override
     public String getFragmentTitle() {
-        return null;
+        return "Fragment Sample";
     }
 
     @Override
@@ -31,7 +31,7 @@ public class FragmentSample extends ABaseNavigationDrawerFragment {
 
     @Override
     public int getViewLayoutId() {
-        return 0;
+        return R.layout.fragment_sample;
     }
 
     @OnClick(R.id.txtSample)

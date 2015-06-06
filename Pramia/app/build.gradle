@@ -23,6 +23,7 @@ android {
         exclude 'META-INF/license.txt'
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
     }
 
     buildTypes {
@@ -31,16 +32,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:appcompat-v7:22.2.0'
 
     /*DI*/
     compile 'com.google.dagger:dagger:2.0'
     apt 'com.google.dagger:dagger-compiler:2.0'
     provided 'org.glassfish:javax.annotation:10.0-b28'
+
+    /*Navigation Drawer*/
+    //compile 'br.com.liveo:navigationdrawer-material:1.0.4'
+    compile 'br.com.liveo:navigationdrawer-material:2.3.2'
 
     compile project(':tripoin-common')
     compile project(':tripoin-component')
