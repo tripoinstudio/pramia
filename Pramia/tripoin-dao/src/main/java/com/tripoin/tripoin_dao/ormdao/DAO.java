@@ -1,4 +1,4 @@
-package com.tripoin.tripoin_dao;
+package com.tripoin.tripoin_dao.ormdao;
 
 /**
  * Created by Achmad Fauzi on 6/4/2015 : 9:58 PM.
