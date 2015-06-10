@@ -48,7 +48,8 @@ public interface GeneralConstant {
         public final String TENANT_NAME = "Pramia";
         public final String APP_TARGET_DEFAULT_PATH = Environment.getExternalStorageDirectory().getPath()
                 .concat(Punctuation.SLASH)
-                .concat(TENANT_NAME);
+                .concat(TENANT_NAME)
+                .concat(Punctuation.SLASH);
         public final String APP_PROPERTY = APP_TARGET_DEFAULT_PATH.concat(".property");
         public final String SERVER_HOST_KEY = "SERVER_HOST";
         public final String SERVER_PORT_KEY ="SERVER_PORT";
